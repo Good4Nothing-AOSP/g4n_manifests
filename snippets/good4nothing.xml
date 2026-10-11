@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="good4nothing"
+           fetch="https://github.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/16.2" />
+
+  <remote  name="good4nothing-gitlab"
+           fetch="https://gitlab.com/"
+           sync-c="true"
+           sync-j="4"
+           depth="1"
+           revision="refs/heads/16" />
+
+  <!-- g4n additions -->
+  <project path="android" name="Good4Nothing-AOSP/android" remote="good4nothing" />
+
+  <project path="build/make" name="Good4Nothing-AOSP/build_make" groups="pdk,sysui-studio" remote="good4nothing" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="Good4Nothing-AOSP/build_soong" groups="pdk,tradefed,sysui-studio" remote="good4nothing" />
+
+  <project path="art" name="Good4Nothing-AOSP/art" groups="pdk" remote="good4nothing" />
+
+  <project path="bionic" name="Good4Nothing-AOSP/bionic" groups="pdk" remote="good4nothing" />
+
+  <project path="bootable/recovery" name="Good4Nothing-AOSP/bootable_recovery" groups="pdk" remote="good4nothing" />
+
+  <project path="device/lineage/sepolicy" name="Good4Nothing-AOSP/device_lineage_sepolicy" remote="good4nothing" />
+
+  <project path="external/arm-optimized-routines" name="Good4Nothing-AOSP/external_arm-optimized-routines" groups="pdk" remote="good4nothing" />
+  <project path="external/bouncycastle" name="Good4Nothing-AOSP/external_bouncycastle" groups="pdk" remote="good4nothing" />
+  <project path="external/FadingEdgeLayout" name="Good4Nothing-AOSP/external_FadingEdgeLayout" remote="good4nothing" />
+  <project path="external/libjpeg-turbo" name="Good4Nothing-AOSP/external_libjpeg-turbo" groups="pdk" remote="good4nothing" />
+  <project path="external/jemalloc_new" name="Good4Nothing-AOSP/external_jemalloc_new" groups="pdk" remote="good4nothing" />
+  <project path="external/pthreadpool" name="Good4Nothing-AOSP/external_pthreadpool" groups="pdk" remote="good4nothing" />
+  <project path="external/scudo" name="Good4Nothing-AOSP/external_scudo" groups="pdk" remote="good4nothing" />
+  <project path="external/sqlite" name="Good4Nothing-AOSP/external_sqlite" groups="pdk" remote="good4nothing" />
+  <project path="external/tensorflow" name="Good4Nothing-AOSP/external_tensorflow" groups="pdk" remote="good4nothing" />
+  <project path="external/zlib-ng" name="Good4Nothing-AOSP/external_zlib-ng" groups="pdk" remote="good4nothing" />
+
+  <project path="frameworks/av" name="Good4Nothing-AOSP/frameworks_av" groups="pdk,sysui-studio" remote="good4nothing" />
+  <project path="frameworks/base" name="Good4Nothing-AOSP/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="good4nothing" />
+  <project path="frameworks/libs/systemui" name="Good4Nothing-AOSP/frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="good4nothing" />
+  <project path="frameworks/native" name="Good4Nothing-AOSP/frameworks_native" groups="pdk" remote="good4nothing" />
+  <project path="frameworks/opt/net/wifi" name="Good4Nothing-AOSP/frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="good4nothing" />
+  <project path="frameworks/opt/telephony" name="Good4Nothing-AOSP/frameworks_opt_telephony" groups="pdk,sysui-studio" remote="good4nothing" />
+
+  <project path="hardware/interfaces" name="Good4Nothing-AOSP/hardware_interfaces" groups="pdk,sysui-studio" remote="good4nothing" />
+
+  <project path="hardware/qcom-caf/sm8450/display" name="Pong-Development/hardware_qcom-caf_sm8450_display" groups="qcom" revision="16" />
+
+  <project path="kernel/configs" name="Good4Nothing-AOSP/kernel_configs" groups="vts,pdk" remote="good4nothing" />
+
+  <project path="lineage-sdk" name="Good4Nothing-AOSP/lineage-sdk" remote="good4nothing" />
+  <project path="axion-sdk" name="Good4Nothing-AOSP/axion-sdk" remote="good4nothing" />
+  <project path="libcore" name="Good4Nothing-AOSP/libcore" groups="pdk" remote="good4nothing" />
+
+  <project path="packages/apps/ColumbusService" name="Good4Nothing-AOSP/packages_apps_ColumbusService" remote="good4nothing" />
+  <project path="packages/apps/DeskClock" name="Good4Nothing-AOSP/packages_apps_DeskClock" groups="pdk-fs" remote="good4nothing" />
+  <project path="packages/apps/Dialer" name="Good4Nothing-AOSP/packages_apps_Dialer" groups="pdk-fs" remote="good4nothing" />
+  <project path="packages/apps/DocumentsUI" name="Good4Nothing-AOSP/packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="good4nothing" />
+  <project path="packages/apps/FaceUnlock" name="Good4Nothing-AOSP/packages_apps_FaceUnlock" remote="good4nothing" />
+  <project path="packages/apps/GameSpace" name="Good4Nothing-AOSP/packages_apps_GameSpace" remote="good4nothing" />
+  <project path="packages/apps/Launcher3" name="Good4Nothing-AOSP/packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="good4nothing" />
+  <project path="packages/apps/LineageParts" name="Good4Nothing-AOSP/packages_apps_LineageParts" remote="good4nothing" />
+  <project path="packages/apps/LMOFreeform" name="Good4Nothing-AOSP/packages_apps_LMOFreeform" remote="good4nothing" />
+  <project path="packages/apps/Matlog" name="Good4Nothing-AOSP/packages_apps_Matlog" remote="good4nothing" />
+  <project path="packages/apps/Messaging" name="Good4Nothing-AOSP/packages_apps_Messaging" groups="pdk-fs" remote="good4nothing" />
+  <project path="packages/apps/OmniStyle" name="Good4Nothing-AOSP/packages_apps_OmniStyle" remote="good4nothing" />
+  <project path="packages/apps/Sandbox" name="Good4Nothing-AOSP/packages_apps_Sandbox" remote="good4nothing" />
+  <project path="packages/apps/Settings" name="Good4Nothing-AOSP/packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="good4nothing" />
+  <project path="packages/apps/SettingsIntelligence" name="Good4Nothing-AOSP/packages_apps_SettingsIntelligence" groups="pdk-fs" remote="good4nothing" />
+  <project path="packages/apps/SetupWizard" name="Good4Nothing-AOSP/packages_apps_SetupWizard" remote="good4nothing" />
+  <project path="packages/apps/ThemePicker" name="Good4Nothing-AOSP/packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="good4nothing" />
+  <project path="packages/apps/Updater" name="Good4Nothing-AOSP/packages_apps_Updater" remote="good4nothing" />
+  <project path="packages/apps/WallpaperPicker2" name="Good4Nothing-AOSP/packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="good4nothing" />
+  <project path="packages/inputmethods/LatinIME" name="Good4Nothing-AOSP/packages_inputmethods_LatinIME" groups="pdk-fs" remote="good4nothing" />
+  <project path="packages/modules/Bluetooth" name="Good4Nothing-AOSP/packages_modules_Bluetooth" groups="pdk" remote="lunaris" />
+  <project path="packages/modules/Connectivity" name="Good4Nothing-AOSP/packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="good4nothing" />
+  <project path="packages/modules/Permission" name="Good4Nothing-AOSP/packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="good4nothing" />
+  <project path="packages/modules/StatsD" name="Good4Nothing-AOSP/packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="good4nothing" />
+  <project path="packages/modules/Wifi" name="Good4Nothing-AOSP/packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="good4nothing" />
+  <project path="packages/services/DeviceAsWebcam" name="Good4Nothing-AOSP/packages_services_DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="good4nothing" />
+  <project path="packages/services/OmniJaws" name="Good4Nothing-AOSP/packages_services_OmniJaws" remote="good4nothing" />
+  <project path="packages/services/Telecomm" name="Good4Nothing-AOSP/packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="good4nothing" />
+  <project path="packages/services/Telephony" name="Good4Nothing-AOSP/packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="good4nothing" />
+
+  <project path="system/core" name="Good4Nothing-AOSP/system_core" groups="pdk" remote="good4nothing" />
+  <project path="system/media" name="Good4Nothing-AOSP/system_media" groups="pdk" remote="good4nothing" />
+  <project path="system/sepolicy" name="Good4Nothing-AOSP/system_sepolicy" groups="pdk" remote="good4nothing" />
+  <project path="system/memory/libmeminfo" name="Good4Nothing-AOSP/system_memory_libmeminfo" groups="pdk" remote="good4nothing" />
+  <project path="system/update_engine" name="Good4Nothing-AOSP/system_update_engine" groups="pdk" remote="good4nothing" />
+  <project path="system/vold" name="Good4Nothing-AOSP/system_vold" groups="pdk" remote="good4nothing" />
+
+  <project path="toolchain/pgo-profiles" name="Good4Nothing-AOSP/toolchain_pgo-profiles" groups="pdk" clone-depth="1" remote="good4nothing" />
+
+  <project path="vendor/extras" name="Good4Nothing-AOSP/vendor_extras" remote="good4nothing" />
+  <project path="vendor/prebuilts" name="Good4Nothing-AOSP/vendor_prebuilts" remote="good4nothing" />
+  <project path="vendor/certification" name="Good4Nothing-AOSP/vendor_certification" remote="good4nothing" />
+  <project path="vendor/lineage" name="Good4Nothing-AOSP/vendor_lineage" remote="good4nothing" />
+  <project path="vendor/pixel/extract-utils" name="G4N-Eishiro/vendor_pixel_extract-utils" remote="Good4Nothing-gitlab" >
+    <linkfile src="extract-all.sh" dest="vendor/pixel/extract-all.sh" />
+  </project>
+  <project path="vendor/pixel/gms" name="G4N-Eishiro/vendor_pixel_gms" remote="good4nothing-gitlab" />
+  <project path="vendor/pixel/launcher" name="G4N-Eishiro/vendor_pixel_launcher" remote="good4nothing-gitlab" />
+  <project path="vendor/pixel/sounds" name="G4N-Eishiro/vendor_pixel_sounds" remote="good4nothing-gitlab" />
+  <project path="vendor/pixel/themepicker" name="G4N-Eishiro/vendor_pixel_themepicker" remote="good4nothing-gitlab" />
+  <project path="vendor/google/overlays/ThemeIcons" name="G4N-Eishiro-AOSP/vendor_google_overlays_ThemeIcons" remote="good4nothing" />
+  <project path="vendor/bcr" name="Good4Nothing-AOSP/vendor_bcr" remote="good4nothing" />
+</manifest>
