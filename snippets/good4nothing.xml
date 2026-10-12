@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="Good4Nothing-gitlab"
+        fetch="https://gitlab.com/Good4Nothing-AOSP"
+        revision="tsubaki" />
+
+  <remote name="Good4Nothing-github"
+        fetch="https://github.com/Good4Nothing-AOSP"
+        revision="tsubaki" />
+
   <remote  name="good4nothing"
            fetch="https://github.com/"
            sync-c="true"
