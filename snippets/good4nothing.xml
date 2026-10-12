@@ -57,7 +57,6 @@
   <project path="frameworks/opt/telephony" name="Good4Nothing-AOSP/g4n_frameworks_opt_telephony" groups="pdk,sysui-studio" remote="good4nothing" />
   <project path="hardware/interfaces" name="Good4Nothing-AOSP/hardware_interfaces" groups="pdk,sysui-studio" remote="good4nothing" />
   <project path="kernel/configs" name="Good4Nothing-AOSP/kernel_configs" groups="vts,pdk" remote="good4nothing" />
-  <project path="lineage-sdk" name="Good4Nothing-AOSP/lineage-sdk" remote="good4nothing" />
   <project path="axion-sdk" name="Good4Nothing-AOSP/axion-sdk" remote="good4nothing" />
   <project path="libcore" name="Good4Nothing-AOSP/libcore" groups="pdk" remote="good4nothing" />
   <project path="packages/apps/ColumbusService" name="Good4Nothing-AOSP/packages_apps_ColumbusService" remote="good4nothing" />
