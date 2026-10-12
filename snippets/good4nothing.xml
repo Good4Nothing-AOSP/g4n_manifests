@@ -5,7 +5,7 @@
            fetch="https://github.com/"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/16.2" />
+           revision="refs/heads/16" />
 
   <remote  name="good4nothing-gitlab"
            fetch="https://gitlab.com/"
@@ -30,7 +30,7 @@
   <project path="art" name="Good4Nothing-AOSP/art" groups="pdk" remote="good4nothing" />
   <project path="bionic" name="Good4Nothing-AOSP/bionic" groups="pdk" remote="good4nothing" />
   <project path="bootable/recovery" name="Good4Nothing-AOSP/bootable_recovery" groups="pdk" remote="good4nothing" />
-  <project path="device/lineage/sepolicy" name="Good4Nothing-AOSP/device_lineage_sepolicy" remote="good4nothing" />
+  <project path="device/g4n/sepolicy" name="Good4Nothing-AOSP/device_g4n_sepolicy" remote="good4nothing" />
   <project path="external/arm-optimized-routines" name="Good4Nothing-AOSP/external_arm-optimized-routines" groups="pdk" remote="good4nothing" />
   <project path="external/bouncycastle" name="Good4Nothing-AOSP/external_bouncycastle" groups="pdk" remote="good4nothing" />
   <project path="external/FadingEdgeLayout" name="Good4Nothing-AOSP/external_FadingEdgeLayout" remote="good4nothing" />
@@ -72,7 +72,7 @@
   <project path="packages/apps/Updater" name="Good4Nothing-AOSP/packages_apps_Updater" remote="good4nothing" />
   <project path="packages/apps/WallpaperPicker2" name="Good4Nothing-AOSP/packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="good4nothing" />
   <project path="packages/inputmethods/LatinIME" name="Good4Nothing-AOSP/packages_inputmethods_LatinIME" groups="pdk-fs" remote="good4nothing" />
-  <project path="packages/modules/Bluetooth" name="Good4Nothing-AOSP/packages_modules_Bluetooth" groups="pdk" remote="lunaris" />
+  <project path="packages/modules/Bluetooth" name="Good4Nothing-AOSP/packages_modules_Bluetooth" groups="pdk" remote="good4nothing" />
   <project path="packages/modules/Connectivity" name="Good4Nothing-AOSP/packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="good4nothing" />
   <project path="packages/modules/Permission" name="Good4Nothing-AOSP/packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="good4nothing" />
   <project path="packages/modules/StatsD" name="Good4Nothing-AOSP/packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="good4nothing" />
