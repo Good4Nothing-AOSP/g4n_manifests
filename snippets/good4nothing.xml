@@ -15,7 +15,7 @@
            revision="refs/heads/16" />
 
   <!-- g4n additions -->
-  <project path="android" name="Good4Nothing-AOSP/android" remote="good4nothing" />
+  <project path="manifest" name="Good4Nothing-AOSP/manifest" remote="good4nothing" />
 
   <project path="build/make" name="Good4Nothing-AOSP/build_make" groups="pdk,sysui-studio" remote="good4nothing" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -27,15 +27,10 @@
   </project>
 
   <project path="build/soong" name="Good4Nothing-AOSP/build_soong" groups="pdk,tradefed,sysui-studio" remote="good4nothing" />
-
   <project path="art" name="Good4Nothing-AOSP/art" groups="pdk" remote="good4nothing" />
-
   <project path="bionic" name="Good4Nothing-AOSP/bionic" groups="pdk" remote="good4nothing" />
-
   <project path="bootable/recovery" name="Good4Nothing-AOSP/bootable_recovery" groups="pdk" remote="good4nothing" />
-
   <project path="device/lineage/sepolicy" name="Good4Nothing-AOSP/device_lineage_sepolicy" remote="good4nothing" />
-
   <project path="external/arm-optimized-routines" name="Good4Nothing-AOSP/external_arm-optimized-routines" groups="pdk" remote="good4nothing" />
   <project path="external/bouncycastle" name="Good4Nothing-AOSP/external_bouncycastle" groups="pdk" remote="good4nothing" />
   <project path="external/FadingEdgeLayout" name="Good4Nothing-AOSP/external_FadingEdgeLayout" remote="good4nothing" />
@@ -46,24 +41,17 @@
   <project path="external/sqlite" name="Good4Nothing-AOSP/external_sqlite" groups="pdk" remote="good4nothing" />
   <project path="external/tensorflow" name="Good4Nothing-AOSP/external_tensorflow" groups="pdk" remote="good4nothing" />
   <project path="external/zlib-ng" name="Good4Nothing-AOSP/external_zlib-ng" groups="pdk" remote="good4nothing" />
-
-  <project path="frameworks/av" name="Good4Nothing-AOSP/frameworks_av" groups="pdk,sysui-studio" remote="good4nothing" />
-  <project path="frameworks/base" name="Good4Nothing-AOSP/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="good4nothing" />
-  <project path="frameworks/libs/systemui" name="Good4Nothing-AOSP/frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="good4nothing" />
-  <project path="frameworks/native" name="Good4Nothing-AOSP/frameworks_native" groups="pdk" remote="good4nothing" />
-  <project path="frameworks/opt/net/wifi" name="Good4Nothing-AOSP/frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="good4nothing" />
-  <project path="frameworks/opt/telephony" name="Good4Nothing-AOSP/frameworks_opt_telephony" groups="pdk,sysui-studio" remote="good4nothing" />
-
+  <project path="frameworks/av" name="Good4Nothing-AOSP/g4n_frameworks_av" groups="pdk,sysui-studio" remote="good4nothing" />
+  <project path="frameworks/base" name="Good4Nothing-AOSP/g4n_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="good4nothing" />
+  <project path="frameworks/libs/systemui" name="Good4Nothing-AOSP/g4n_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="good4nothing" />
+  <project path="frameworks/native" name="Good4Nothing-AOSP/g4n_frameworks_native" groups="pdk" remote="good4nothing" />
+  <project path="frameworks/opt/net/wifi" name="Good4Nothing-AOSP/g4n_frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="good4nothing" />
+  <project path="frameworks/opt/telephony" name="Good4Nothing-AOSP/g4n_frameworks_opt_telephony" groups="pdk,sysui-studio" remote="good4nothing" />
   <project path="hardware/interfaces" name="Good4Nothing-AOSP/hardware_interfaces" groups="pdk,sysui-studio" remote="good4nothing" />
-
-  <project path="hardware/qcom-caf/sm8450/display" name="Pong-Development/hardware_qcom-caf_sm8450_display" groups="qcom" revision="16" />
-
   <project path="kernel/configs" name="Good4Nothing-AOSP/kernel_configs" groups="vts,pdk" remote="good4nothing" />
-
   <project path="lineage-sdk" name="Good4Nothing-AOSP/lineage-sdk" remote="good4nothing" />
   <project path="axion-sdk" name="Good4Nothing-AOSP/axion-sdk" remote="good4nothing" />
   <project path="libcore" name="Good4Nothing-AOSP/libcore" groups="pdk" remote="good4nothing" />
-
   <project path="packages/apps/ColumbusService" name="Good4Nothing-AOSP/packages_apps_ColumbusService" remote="good4nothing" />
   <project path="packages/apps/DeskClock" name="Good4Nothing-AOSP/packages_apps_DeskClock" groups="pdk-fs" remote="good4nothing" />
   <project path="packages/apps/Dialer" name="Good4Nothing-AOSP/packages_apps_Dialer" groups="pdk-fs" remote="good4nothing" />
